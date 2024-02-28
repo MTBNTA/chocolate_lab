@@ -15,7 +15,7 @@ public class Chocolate {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "cocoPercentage")
+    @Column(name = "cocoaPercentage")
     private int cocoaPercentage;
 
     @ManyToOne
