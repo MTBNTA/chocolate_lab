@@ -39,3 +39,8 @@ public class ChocolateDTO {
         this.estateId = estateId;
     }
 }
+
+// chocolate DTO used to handle estate_id because chocolate has an estate as a property
+// we don't want all the info about the estate to be printed out (see screenshots)
+// need to think about what the front end wants us to show
+// created chocolate DTO so that result shown at front end is neater than what is printed out with chocolate

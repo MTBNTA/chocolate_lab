@@ -37,8 +37,10 @@ public class ChocolateService {
     }
 
     public Chocolate createNewChocolate(ChocolateDTO chocolateDTO) throws Exception{
+//        find the estate for this chocolate
         Optional<Estate> estate = estateService.getEstateById(chocolateDTO.getEstateId());
         if(estate.isPresent()){
+//            create a chocolate object from all the data we have now
             Chocolate chocolate = new Chocolate(chocolateDTO.getName(), chocolateDTO.getCocoaPercentage(), estate.get());
             chocolateRepository.save(chocolate);
             return chocolate;

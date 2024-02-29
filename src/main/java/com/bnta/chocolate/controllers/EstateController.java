@@ -23,7 +23,7 @@ public class EstateController {
         return new ResponseEntity<>(estates, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/{id}") // SHOW GET localhost:8080/2
     public ResponseEntity<Estate> getEstateById(@PathVariable long id){
 
         Optional<Estate> estate = estateService.getEstateById(id);
